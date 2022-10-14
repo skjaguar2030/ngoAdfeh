@@ -1,0 +1,139 @@
+@import "variables";
+@import "header";
+@import "content";
+@import "footer";
+@import "mixins";
+
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+// Flex box
+
+.flex{
+
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    // &-jc-c{
+    //     justify-content: center;
+    // }
+
+    // &-ai-c{
+    //     align-content: center;
+    // }
+    
+}
+
+body{
+    // margin: 0;
+    // padding: 0;
+    padding: 0 0px;
+    margin: 0 auto;
+    overflow: auto;
+    font-family: $poppins;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+        
+    
+
+
+// Visibility
+
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+
+.hide-for-mobile{
+    // hide for tablet and mobile
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+       
+
+
+
+
+
+
+
+
+
+
+
+// Media query
+
+// @media only screen and (min-width: 1024px){
+//     .hero-container{
+//         margin: 0 30px;
+//         font-weight: 300;
+//         color: $primary-color;
+    
+//         .hero{
+//             text-align: center;
+//             font-family: $public_sans;
+//             font-weight: 500;
+//             font-size: 30px;
+//             color: $primary-color;
+//         }
+    
+//         .sub-section{
+//             display: grid;
+//             grid-template-columns: repeat(2, auto);
+//             // gap: -1em -1em;     // haven't figured out it's importance
+//             margin-bottom: 5em;
+//         }
+    
+//         .subtitle{
+//             color: $complimentary-color;
+//         }
+    
+//         img {
+//             width: 25em;
+//         }
+    
+//         .content{
+//             text-align: left;
+//             width: 70%;
+//         }
+    
+//         .sub-section.left{
+//             grid-template-areas: "left right";
+    
+//             img{
+//                 grid-area: left;
+//             }
+    
+//             .content{
+//                 text-align: right;
+//                 width: 70%;
+//                 justify-self: right;
+//             }
+    
+//         }
+    
+//     }
+// }
