@@ -50,12 +50,50 @@ a{
 }
 
 
+.side{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    opacity: 0.89;
+    transform: translateX(100%);
+    transition: transform 300ms ease-in-out;
 
+    .test{
+        padding: 0;
+        margin-top: 8em;
+       
+    }
 
+    a{
+        color: $complimentary-color;
+        display: block;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 2;
+        padding-left: 20px;
+    }
+
+    .fa-xmark{
+        float: right;
+        margin: 29px 53px 0 0;
+        // width: 2.5em;
+        color: $secondary-color;
+        font-size: 36px;
+    }
+}
 
         
-    
+.open-side{
+    transform: translateX(0%);
+}    
 
+.hide{
+    display: none;
+}
 
 // Visibility
 

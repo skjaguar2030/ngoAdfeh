@@ -25,80 +25,86 @@ $breakpoints-down: ("small": "39.937em", "medium": "63.9375em", "large": "87.5em
 }
 
 
+
 @media only screen and (min-width: 1024px){
 
+    
     .sub-section{
         display: grid;
         grid-template-columns: repeat(2, auto);
         // gap: -1em -1em;     // haven't figured out it's importance
         margin-bottom: 5em;
+            
 
-    img {
-        width: 25em;
+        img {
+            width: 25em;
+        }
+
+        .content{
+            text-align: left;
+            width: 70%;
+        }
+
     }
 
-    .content{
-        text-align: left;
-        width: 70%;
+    .sub-section.left{
+        grid-template-areas: "left right";
+
+        img{
+            grid-area: left;
+        }
+
+        .content{
+            text-align: right;
+            width: 70%;
+            justify-self: right;
+        }
+
     }
 
-}
-
-.sub-section.left{
-    grid-template-areas: "left right";
-
-    img{
-        grid-area: left;
-    }
-
-    .content{
-        text-align: right;
-        width: 70%;
-        justify-self: right;
-    }
-
-}
+    
+   
 }
 
 
 @media only screen and (max-width: 640px){
-.hero-container{
-    margin: 0 15px 15px;
+    .hero-container{
+        margin: 0 15px 15px;
 
-    img{
-        width: 18em;
-    }
-}
-
-
-.my-footer{
-// margin: 0 15px;
-
-    .footer-container{
-        display: block;
-        margin: auto;
-        text-align: center;
-        line-height: 2;
+        img{
+            width: 18em;
+        }
     }
 
-    .partner{
-        text-align: center;
-    }
 
-    .copyright{
-        word-spacing: normal;
-    }
-    
-    #html{
-        width: 6em;
-    }
+    .my-footer{
+    // margin: 0 15px;
 
-    #css{
-        width: 7em;
-    }
+        .footer-container{
+            display: block;
+            margin: auto;
+            text-align: center;
+            line-height: 2;
+        }
 
-    #javascript{
-        width: 6.3em;
+        .partner{
+            text-align: center;
+        }
+
+        .copyright{
+            word-spacing: normal;
+        }
+        
+        #html{
+            width: 6em;
+        }
+
+        #css{
+            width: 7em;
+        }
+
+        #javascript{
+            width: 6.3em;
+        }
     }
-}
 }
