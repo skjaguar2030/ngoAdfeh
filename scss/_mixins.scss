@@ -62,7 +62,10 @@ $breakpoints-down: ("small": "39.937em", "medium": "63.9375em", "large": "87.5em
 
     }
 
-    
+    .side{
+        // translate: translateX(0%);
+        display: none;  // have to change this b
+    }
    
 }
 
