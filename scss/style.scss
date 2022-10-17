@@ -40,7 +40,7 @@ body{
     // padding: 0;
     padding: 0 0px;
     margin: 0 auto;
-    overflow: auto;
+    // overflow: auto;
     font-family: $poppins;
     line-height: 1.5;
 }
@@ -87,6 +87,15 @@ a{
     }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .hero-container {
+    padding-top: 100px;
+  }
         
 .open-side{
     transform: translateX(0%);
