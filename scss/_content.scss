@@ -3,12 +3,17 @@
     // padding-top: 30px;
     font-weight: 300;
 
+    h1{
+        color: #00B0C7;
+        font-weight: 800;
+    }
+
     .hero{
         text-align: center;
         font-family: $public_sans;
         font-weight: 500;
         font-size: 30px;
-        color: $primary-color;
+        color: #007c7d;
     }
 
     img{
@@ -19,7 +24,8 @@
     }
 
     .subtitle{
-        color: $primary-color;
+        // color: $primary-color;
+        color: #007c7d;
     }
 
 }

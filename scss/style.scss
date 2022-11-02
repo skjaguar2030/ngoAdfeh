@@ -38,7 +38,7 @@ html{
 body{
     // margin: 0;
     // padding: 0;
-    padding: 0 0px;
+    padding: 0;
     margin: 0 auto;
     // overflow: auto;
     font-family: $poppins;
@@ -59,14 +59,13 @@ a{
     height: 100vh;
     width: 50%;
     z-index: 999;
-    opacity: 0.89;
+    opacity: 0.955;
     transform: translateX(100%);
     transition: transform 300ms ease-in-out;
 
     .test{
         padding: 0;
         margin-top: 8em;
-       
     }
 
     a{
@@ -76,26 +75,31 @@ a{
         font-size: 25px;
         line-height: 2;
         padding-left: 20px;
+        transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: white;
+        }
+     
     }
 
-    .fa-xmark{
-        float: right;
-        margin: 29px 53px 0 0;
-        // width: 2.5em;
-        color: $secondary-color;
-        font-size: 36px;
-    }
+
 }
 
 .sticky {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
 }
 
 .sticky + .hero-container {
     padding-top: 100px;
-  }
+}
+
+.boxShadow{
+    box-shadow: 3px 3px 10px black , -1em 0 0.4em #003e3f;
+}
         
 .open-side{
     transform: translateX(0%);
@@ -121,67 +125,3 @@ a{
 }
 
        
-
-
-
-
-
-
-
-
-
-
-
-// Media query
-
-// @media only screen and (min-width: 1024px){
-//     .hero-container{
-//         margin: 0 30px;
-//         font-weight: 300;
-//         color: $primary-color;
-    
-//         .hero{
-//             text-align: center;
-//             font-family: $public_sans;
-//             font-weight: 500;
-//             font-size: 30px;
-//             color: $primary-color;
-//         }
-    
-//         .sub-section{
-//             display: grid;
-//             grid-template-columns: repeat(2, auto);
-//             // gap: -1em -1em;     // haven't figured out it's importance
-//             margin-bottom: 5em;
-//         }
-    
-//         .subtitle{
-//             color: $complimentary-color;
-//         }
-    
-//         img {
-//             width: 25em;
-//         }
-    
-//         .content{
-//             text-align: left;
-//             width: 70%;
-//         }
-    
-//         .sub-section.left{
-//             grid-template-areas: "left right";
-    
-//             img{
-//                 grid-area: left;
-//             }
-    
-//             .content{
-//                 text-align: right;
-//                 width: 70%;
-//                 justify-self: right;
-//             }
-    
-//         }
-    
-//     }
-// }
