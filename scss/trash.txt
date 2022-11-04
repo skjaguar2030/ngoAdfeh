@@ -72,4 +72,4 @@ margin-bottom: 37.350px;
         color: $primary-color;
     }
 
-}
+}   

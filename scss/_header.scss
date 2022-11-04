@@ -1,5 +1,5 @@
 header{
-    background-color: #00B0C7;   
+    background-color: #00B0C7;
 
    
     
@@ -22,7 +22,8 @@ header{
     }
 
     #red{
-        color: #cc0000;
+        color:#ff0000;
+        // color: #cc0000;
     }
 
     a{
@@ -42,7 +43,8 @@ header{
     }   
 
     .fa-instagram{
-        color:#cc0000;
+        color:tomato;
+        // color:#ff0000;
     }
 
     .fa-bars {
@@ -65,10 +67,7 @@ header{
         font-size: 36px;
 
         &:hover{
-            // opacity: 1;
-
         transform: scale(.90);
-
         color: #cc0000;
         transition: color 300ms ease-in-out;
         cursor: pointer;

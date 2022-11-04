@@ -1,27 +1,32 @@
 .footer-container{
     margin: 0 120px;
     color: white;
-
-    
 }
 
 .my-footer{
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background-color: #003e3f;
     color: white;
     
     .social-media{
         text-align: center;
-        padding: 20px 0;
+        padding: 20px 0; 
     }
 
     .fa-brands{
-        color: $secondary-color;
+        // color: $secondary-color;
+        color: white;
         font-size: 25px;
         padding: 0 30px;
-    }   
+    }  
+    
+    .fa-instagram{
+        // color:red;
+        color:#ff0000;
+    }
 
     .copy-right{
-        background-color: #007c7d;
+        background-color: #00B0C7;
         color: white;
         text-align: center;
         word-spacing: 10px;
@@ -33,10 +38,6 @@
     }
 
     .partners{
-        // &:not(:first-child){
-        //     padding: 0 10px;
-        // }
-
         padding: 0 10px;
     }
 

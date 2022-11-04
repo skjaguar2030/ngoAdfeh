@@ -24,23 +24,13 @@ html{
     &-jc-sb{
         justify-content: space-between;
     }
-
-    // &-jc-c{
-    //     justify-content: center;
-    // }
-
-    // &-ai-c{
-    //     align-content: center;
-    // }
     
 }
 
 body{
-    // margin: 0;
-    // padding: 0;
     padding: 0;
     margin: 0 auto;
-    // overflow: auto;
+    overflow: auto;
     font-family: $poppins;
     line-height: 1.5;
 }
@@ -87,20 +77,27 @@ a{
 
 }
 
-.sticky {
-    position: fixed;
+// .sticky {
+//     position: fixed;
+//     top: 0px;
+//     width: 100%;
+// }
+
+// .sticky + .hero-container {
+//     padding-top: 100px;
+// }
+
+// .boxShadow{
+//     box-shadow: 3px 3px 10px black , -1em 0 0.4em #003e3f;
+// }
+     
+.fixed{
+    position: sticky;
     top: 0px;
+    // left: 0;
     width: 100%;
-}
-
-.sticky + .hero-container {
-    padding-top: 100px;
-}
-
-.boxShadow{
     box-shadow: 3px 3px 10px black , -1em 0 0.4em #003e3f;
 }
-        
 .open-side{
     transform: translateX(0%);
 }    
