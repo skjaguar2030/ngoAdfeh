@@ -5,6 +5,8 @@ const close = document.querySelector('.close')
 const side = document.querySelector('.side')
 
 menu.addEventListener('click', () => { 
+    console.log('Assalam Alaikum');
+    
     side.classList.add('open-side');
     menu.classList.add('hide');
 

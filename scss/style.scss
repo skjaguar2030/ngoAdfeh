@@ -41,41 +41,6 @@ a{
 }
 
 
-.side{
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: white;
-    height: 100vh;
-    width: 50%;
-    z-index: 999;
-    opacity: 0.955;
-    transform: translateX(100%);
-    transition: transform 300ms ease-in-out;
-
-    .test{
-        padding: 0;
-        margin-top: 8em;
-    }
-
-    a{
-        color: $complimentary-color;
-        display: block;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 2;
-        padding-left: 20px;
-        transition: color .3s ease-in-out, background-color .3s ease-in-out;
-
-        &:hover{
-            background-color: $secondary-color;
-            color: white;
-        }
-     
-    }
-
-
-}
 
 // .sticky {
 //     position: fixed;
@@ -120,5 +85,11 @@ a{
         display: none;
     }
 }
+
+// .reduce{
+//     @include breakpoint-down(small) {
+
+//     }
+// }
 
        

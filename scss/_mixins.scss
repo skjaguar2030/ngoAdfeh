@@ -71,11 +71,46 @@ $breakpoints-down: ("small": "39.937em", "medium": "63.9375em", "large": "87.5em
 
 
 @media only screen and (max-width: 640px){
+    header{
+        nav{
+            padding: 15px 20px;
+        }
+
+        .logo{
+            font-size: 20px;
+        }
+
+        .fa-bars{
+            font-size: 25px;
+        }
+    
+        .fa-xmark{
+            margin: 13px 22px 0 0;
+            font-size: 30px;
+        }
+
+    }
+    
+    .side{
+        a{
+           font-size: 20px;
+           padding-left: 15px;
+        }
+    }
     .hero-container{
         margin: 0 15px 15px;
+        
+        h1{
+            font-size: 25px;
+        }
 
+        .subtitle{
+            font-size: 20px;
+        }
+
+        // for image I have to create a breakpoint to reduce the width
         img{
-            width: 18em;
+            width: 15em;
         }
     }
 
@@ -98,15 +133,19 @@ $breakpoints-down: ("small": "39.937em", "medium": "63.9375em", "large": "87.5em
         }
         
         #html{
-            width: 6em;
+            width: 5em;
         }
 
         #css{
-            width: 7em;
+            width: 6em;
         }
 
         #javascript{
-            width: 6.3em;
+            width: 5.3em;
         }
+
+        .fa-brands{
+            padding: 0 20px;
+        }  
     }
 }
