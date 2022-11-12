@@ -87,11 +87,35 @@ $breakpoints-down: ("small": "39.937em", "medium": "63.9375em", "large": "87.5em
         .fa-xmark{
             margin: 13px 22px 0 0;
             font-size: 30px;
+            color: #ff0000;
         }
+
+        // .fa-xmark {
+        //     float: right;
+        //     margin: 29px 53px 0 0;
+        //     // width: 2.5em;
+        //     color: #0476bc;
+        //     transition: color 300ms ease-in-out;
+    
+        //     // opacity: 0.4;
+        //     font-size: 36px;
+    
+        //     &:hover{
+        //     transform: scale(.90);
+        //     color: #ff0000;
+        //     transition: color 300ms ease-in-out;
+        //     cursor: pointer;
+    
+        //     }
+        // }
 
     }
     
     .side{
+        .test{
+            margin-top: 3.7em;
+        }
+
         a{
            font-size: 20px;
            padding-left: 15px;
